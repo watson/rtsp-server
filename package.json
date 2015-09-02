@@ -1,6 +1,6 @@
 {
   "name": "rtsp-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Low level module for creating RTSP servers",
   "main": "index.js",
   "scripts": {
@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/watson/rtsp-server#readme",
   "coordinates": [
-    55.6877288,
-    12.5955879
+    55.68773239999999,
+    12.5955791
   ]
 }
