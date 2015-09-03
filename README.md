@@ -49,6 +49,7 @@ This project is not:
 - An RTSP client
 - A functional RTSP server you just can run out of the box (think of
   this module more like the core `http` module without the client part)
+- A discovery service: I.e. no mDNS/Bonjour/Zeroconf technology included
 
 ## Todo
 
