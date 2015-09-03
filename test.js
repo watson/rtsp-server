@@ -41,6 +41,7 @@ test('no response body', function (t) {
 test('with response body', function (t) {
   t.plan(5)
 
+  var date
   var server = rtsp.createServer(function (req, res) {
     t.equal(req.method, 'OPTIONS')
     t.equal(req.url, '*')
@@ -49,6 +50,7 @@ test('with response body', function (t) {
     res.setHeader('Bar', 'baz')
     res.write('Hello World!')
     res.end()
+    date = new Date().toGMTString()
   })
 
   server.listen(function () {
@@ -66,7 +68,7 @@ test('with response body', function (t) {
 
     client.on('end', function () {
       var data = Buffer.concat(buffers).toString()
-      t.equal(data, 'RTSP/1.0 200 OK\r\nCSeq: 42\r\nBar: baz\r\n\r\nHello World!')
+      t.equal(data, 'RTSP/1.0 200 OK\r\nCSeq: 42\r\nDate: ' + date + '\r\nBar: baz\r\n\r\nHello World!')
     })
   })
 

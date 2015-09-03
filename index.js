@@ -25,6 +25,7 @@ exports.createServer = function (onRequest) {
       debug('%s request (CSeq: %s)', req.method, req.headers['cseq'])
       var res = new ServerResponse(socket)
       res.setHeader('CSeq', req.headers['cseq'])
+      res.setHeader('Date', new Date().toGMTString())
       server.emit('request', req, res)
     })
 
