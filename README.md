@@ -4,8 +4,8 @@ A low level module for creating [RTSP
 servers](https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol).
 
 This project aims for 100% compliance with [RFC
-2326](https://tools.ietf.org/html/rfc2326#page-57). If you find
-something missing, please [open an
+2326](https://tools.ietf.org/html/rfc2326). If you find something
+missing, please [open an
 issue](https://github.com/watson/rtsp-server/issues).
 
 [![Build status](https://travis-ci.org/watson/rtsp-server.svg?branch=master)](https://travis-ci.org/watson/rtsp-server)
