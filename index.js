@@ -36,7 +36,7 @@ exports.createServer = function (onRequest) {
     var encoder = new rtsp.Encoder()
 
     decoder.on('request', function (req) {
-      debug('%s %s', req.method, req.url, req.headers)
+      debug('%s %s', req.method, req.uri, req.headers)
 
       var res = encoder.response()
       res.setHeader('CSeq', req.headers['cseq'])
