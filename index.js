@@ -8,7 +8,7 @@ var debug = require('debug')(pkg.name)
 exports.CLIENT_METHODS = require('./lib/client-methods')
 exports.SERVER_METHODS = require('./lib/server-methods')
 exports.STATUS_CODES = rtsp.STATUS_CODES
-exports.IncomingMessage = rtsp.Request
+exports.IncomingMessage = rtsp.IncomingMessage
 exports.ServerResponse = rtsp.Response
 
 exports.createServer = function (onRequest) {
