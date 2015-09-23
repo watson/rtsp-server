@@ -20,7 +20,7 @@
   ],
   "dependencies": {
     "debug": "^2.2.0",
-    "rtsp-stream": "^0.2.1"
+    "rtsp-stream": "^0.2.2"
   },
   "devDependencies": {
     "standard": "^5.1.1",
