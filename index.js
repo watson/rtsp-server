@@ -42,6 +42,9 @@ exports.createServer = function (onRequest) {
       res.setHeader('CSeq', req.headers['cseq'])
       res.setHeader('Date', new Date().toGMTString())
 
+      req.socket = socket
+      res.socket = socket
+
       server.emit('request', req, res)
     })
 
